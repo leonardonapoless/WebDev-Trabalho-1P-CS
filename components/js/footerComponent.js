@@ -18,7 +18,8 @@ footerTemplate.innerHTML = `
             background-color: #5a5a4d;
             color: white;
             border: 2px solid black;
-            border-radius: 30px;
+            border-radius: 70px;
+            corner-shape: squircle;
             width: 360px;
             margin: 40px auto;
             padding: 20px;
