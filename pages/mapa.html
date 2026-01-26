@@ -1,55 +1,46 @@
 <!doctype html>
 <html lang="pt-BR">
-    <head>
-        <meta charset="UTF-8" />
-        <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
-        />
-        <title>Sacolão Rodrigues - Localização</title>
-        <link rel="stylesheet" href="/css/mapa.css" />
-        <link rel="stylesheet" href="/css/main.css" />
-        <link rel="stylesheet" href="/css/cursor.css" media="(hover: hover) and (pointer: fine)" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
-        <link rel="icon" href="/icon/logo.png" />
-        <script>
-            (function() {
-                var shouldLoadCursor = window.matchMedia && window.matchMedia('(hover: hover) and (pointer: fine)').matches;
-                if (shouldLoadCursor) {
-                    var s = document.createElement('script');
-                    s.src = '/js/cursor.js';
-                    s.defer = true;
-                    document.head.appendChild(s);
-                }
-            })();
-        </script>
-        <script type="module" src="/components/js/footerComponent.js" defer></script>
-        <script defer>
-            document.getElementById("voltarBtn").onclick = function () {
-                window.location.href = "../index.html";
-            };
-        </script>
-    </head>
-    <body>
-        <main class="sobre-container">
-            <section class="bloco-lateral" id="localizacao">
-                <div class="mapa-wrapper">
-                    <h2 class="mapa-title-custom">Localização</h2>
-                    <div class="mapa-container">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d468.8029446193362!2d-45.166697!3d-19.948682!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b359c03bfa8cd3%3A0xdd37cec70dc4dec1!2sSacol%C3%A3o%20Rodrigues!5e0!3m2!1sen!2sbr!4v1748869477509!5m2!1sen!2sbr"
-                            allowfullscreen=""
-                            loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"
-                        ></iframe>
-                    </div>
-                </div>
-            </section>
-            <button id="voltarBtn" class="animar-entrada" type="button">
-                Voltar para a página inicial
-            </button>
-        </main>
-        <footer-component></footer-component>
 
-    </body>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <title>Sacolão Rodrigues - Localização</title>
+    <link rel="stylesheet" href="/css/mapa.css" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="preload" href="/assets/cursors/default.svg" as="image" type="image/svg+xml" />
+    <link rel="preload" href="/assets/cursors/hover.svg" as="image" type="image/svg+xml" />
+    <link rel="preload" href="/assets/cursors/click.svg" as="image" type="image/svg+xml" />
+    <link rel="stylesheet" href="/css/cursor.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="icon" href="/icon/logo.png" />
+    <script src="/js/config.js"></script>
+    <script src="/js/cursor.js"></script>
+    <script type="module" src="/components/js/footerComponent.js" defer></script>
+    <script defer>
+        document.getElementById("voltarBtn").onclick = function () {
+            window.location.href = "../index.html";
+        };
+    </script>
+</head>
+
+<body>
+    <main class="sobre-container">
+        <section class="bloco-lateral" id="localizacao">
+            <div class="mapa-wrapper">
+                <h2 class="mapa-title-custom">Localização</h2>
+                <div class="mapa-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d468.8029446193362!2d-45.166697!3d-19.948682!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b359c03bfa8cd3%3A0xdd37cec70dc4dec1!2sSacol%C3%A3o%20Rodrigues!5e0!3m2!1sen!2sbr!4v1748869477509!5m2!1sen!2sbr"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+        <button id="voltarBtn" class="animar-entrada" type="button">
+            Voltar para a página inicial
+        </button>
+    </main>
+    <footer-component></footer-component>
+
+</body>
+
 </html>

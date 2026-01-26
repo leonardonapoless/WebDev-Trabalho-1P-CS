@@ -1,83 +1,71 @@
 <!doctype html>
 <html lang="pt-BR">
-    <head>
-        <meta charset="UTF-8" />
-        <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
-        />
-        <title>Sacolão Rodrigues</title>
-        <link
-            rel="stylesheet"
-            href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Limelight&display=swap"
-        />
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-        />
-        <link rel="stylesheet" href="css/main.css" />
-        <link rel="stylesheet" href="css/cursor.css" media="(hover: hover) and (pointer: fine)" />
-        <link rel="icon" href="icon/logo.png" />
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
-        <script type="module" src="components/js/headerComponent.js" defer></script>
-        <script type="module" src="components/js/footerComponent.js" defer></script>
-        <script>
-            (function() {
-                var shouldLoadCursor = window.matchMedia && window.matchMedia('(hover: hover) and (pointer: fine)').matches;
-                if (shouldLoadCursor) {
-                    var s = document.createElement('script');
-                    s.src = 'js/cursor.js';
-                    s.defer = true;
-                    document.head.appendChild(s);
-                }
-            })();
-        </script>
-        <script src="script.js" defer></script>
-    </head>
 
-    <body>
-        <header-component></header-component>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Sacolão Rodrigues</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Limelight&display=swap" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="preload" href="assets/cursors/default.svg" as="image" type="image/svg+xml" />
+    <link rel="preload" href="assets/cursors/hover.svg" as="image" type="image/svg+xml" />
+    <link rel="preload" href="assets/cursors/click.svg" as="image" type="image/svg+xml" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/cursor.css" />
+    <link rel="icon" href="icon/logo.png" />
+    <script src="js/config.js"></script>
+    <script src="js/cursor.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
+    <script type="module" src="components/js/headerComponent.js" defer></script>
+    <script type="module" src="components/js/footerComponent.js" defer></script>
+    <script src="script.js" defer></script>
+</head>
 
-        <main>
-            <nav class="categoria-nav">
-                <button class="hamburguer">☰ Categorias</button>
-                <div class="categoria-menu">
-                    <button class="categoria-btn" data-category="frutas">
-                        Frutas
-                    </button>
-                    <button class="categoria-btn" data-category="legumes">
-                        Legumes
-                    </button>
-                    <button class="categoria-btn" data-category="verduras">
-                        Verduras
-                    </button>
-                    <button class="categoria-btn" data-category="outros">
-                        Outros
-                    </button>
-                    <button class="categoria-btn active" data-category="todos">
-                        Todos
-                    </button>
-                </div>
-            </nav>
+<body>
+    <header-component></header-component>
 
-            <div class="products product-grid" id="product-container"></div>
-        </main>
-
-        <template id="product-card-template">
-            <div class="product">
-                <img src="" alt="" class="product-image" />
-                <div class="product-title"></div>
-                <div class="price"></div>
-                <div class="quantity-controls">
-                    <button data-action="sub">-</button>
-                    <span class="quantity">0</span>
-                    <button data-action="add">+</button>
-                </div>
+    <main>
+        <nav class="categoria-nav">
+            <button class="hamburguer">☰ Categorias</button>
+            <div class="categoria-menu">
+                <button class="categoria-btn" data-category="frutas">
+                    Frutas
+                </button>
+                <button class="categoria-btn" data-category="legumes">
+                    Legumes
+                </button>
+                <button class="categoria-btn" data-category="verduras">
+                    Verduras
+                </button>
+                <button class="categoria-btn" data-category="outros">
+                    Outros
+                </button>
+                <button class="categoria-btn active" data-category="todos">
+                    Todos
+                </button>
             </div>
-        </template>
+        </nav>
 
-        <div class="separador-footer"></div>
-        <footer-component></footer-component>
+        <div class="products product-grid" id="product-container"></div>
+    </main>
 
-    </body>
+    <template id="product-card-template">
+        <div class="product">
+            <img src="" alt="" class="product-image" />
+            <div class="product-title"></div>
+            <div class="price"></div>
+            <div class="quantity-controls">
+                <button data-action="sub">-</button>
+                <span class="quantity">0</span>
+                <button data-action="add">+</button>
+            </div>
+        </div>
+    </template>
+
+    <div class="separador-footer"></div>
+    <footer-component></footer-component>
+
+</body>
+
 </html>

@@ -1,0 +1,1 @@
+window.CUSTOM_CURSOR_ENABLED = true;

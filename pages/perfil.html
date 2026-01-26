@@ -6,28 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perfil</title>
     <link rel="stylesheet" href="../css/perfil.css">
-        <link rel="stylesheet" href="/css/main.css" />
-        <link rel="stylesheet" href="/css/cursor.css" media="(hover: hover) and (pointer: fine)" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="preload" href="/assets/cursors/default.svg" as="image" type="image/svg+xml" />
+    <link rel="preload" href="/assets/cursors/hover.svg" as="image" type="image/svg+xml" />
+    <link rel="preload" href="/assets/cursors/click.svg" as="image" type="image/svg+xml" />
+    <link rel="stylesheet" href="/css/cursor.css" />
     <link rel="icon" href="/icon/logo.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="/js/config.js"></script>
+    <script src="/js/cursor.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
     <script src="/components/js/headerComponent.js" defer></script>
     <script type="module" src="/components/js/footerComponent.js" defer></script>
-    <script>
-        (function() {
-            var shouldLoadCursor = window.matchMedia && window.matchMedia('(hover: hover) and (pointer: fine)').matches;
-            if (shouldLoadCursor) {
-                var s = document.createElement('script');
-                s.src = '/js/cursor.js';
-                s.defer = true;
-                document.head.appendChild(s);
-            }
-        })();
-    </script>
     <script src="../js/perfil.js" defer></script>
 </head>
 
-<body> 
+<body>
 
     <header-component variant="perfil"></header-component>
 

@@ -1,229 +1,206 @@
 <!doctype html>
 <html lang="pt-BR">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Sobre - Sacolão Rodrigues</title>
-        <link rel="stylesheet" href="/css/main.css" />
-        <link rel="stylesheet" href="/css/sobre.css" />
-        <link
-            rel="stylesheet"
-            href="/css/cursor.css"
-            media="(hover: hover) and (pointer: fine)"
-        />
-        <link rel="icon" href="/icon/logo.png" />
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-        />
-        <script>
-            (function () {
-                var shouldLoadCursor =
-                    window.matchMedia &&
-                    window.matchMedia("(hover: hover) and (pointer: fine)")
-                        .matches;
-                if (shouldLoadCursor) {
-                    var s = document.createElement("script");
-                    s.src = "/js/cursor.js";
-                    s.defer = true;
-                    document.head.appendChild(s);
-                }
-            })();
-        </script>
-    </head>
 
-    <body>
-        <main class="sobre-container">
-            <header class="pagina-header animar-entrada">
-                <h1>Sobre o Sacolão Rodrigues</h1>
-            </header>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sobre - Sacolão Rodrigues</title>
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/sobre.css" />
+    <link rel="preload" href="/assets/cursors/default.svg" as="image" type="image/svg+xml" />
+    <link rel="preload" href="/assets/cursors/hover.svg" as="image" type="image/svg+xml" />
+    <link rel="preload" href="/assets/cursors/click.svg" as="image" type="image/svg+xml" />
+    <link rel="stylesheet" href="/css/cursor.css" />
+    <link rel="icon" href="/icon/logo.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <script src="/js/config.js"></script>
+    <script src="/js/cursor.js"></script>
+</head>
 
-            <div class="layout-sobre-principal animar-entrada">
-                <article class="coluna-texto">
-                    <p>
-                        O <strong>Sacolão Rodrigues</strong> é uma empresa real
-                        sediada no município de Araujos-MG, é uma empresa que
-                        tem seu foco no comércio de produtos relacionados a
-                        hortifruti, produtos de alta qualidade que são
-                        adquiridos no CEASA-MG, próximo a Belo Horizonte e seu
-                        dono é <strong>Eurides</strong>, pai da aluna
-                        <strong>Ana Paula</strong>.
-                    </p>
-                    <br />
-                    <p>
-                        Acerca do projeto referente a criação do site, as
-                        tarefas foram bem espalhadas entre os alunos e contamos
-                        com muita pesquisa, principalmente o uso de diversas
-                        ferramentas para pesquisa, principalmente pelo fato do
-                        site conter funcionalidades relativamente complexas,
-                        além do trabalho mútuo entre todos participantes para
-                        desenvolvimento de todas funcionalidades (como a
-                        produção do design, resolução das partes lógicas,
-                        estilização do site, e etc).
-                    </p>
-                    <br />
-                    Criado e desenvolvido pelos alunos
-                    <strong>Leonardo Nápoles</strong>,
-                    <strong>Júlia Caroline</strong>,
-                    <strong>Ana Paula Ferreira Rodrigues</strong>, estudantes do
-                    curso de Ciência da Computação na FUMEC, para o trabalho
-                    referente a matéria de introdução a web, do professor
-                    <strong>Gilmar Borba</strong>.
-                </article>
+<body>
+    <main class="sobre-container">
+        <header class="pagina-header animar-entrada">
+            <h1>Sobre o Sacolão Rodrigues</h1>
+        </header>
 
-                <aside class="coluna-lateral">
-                    <section
-                        class="bloco-lateral"
-                        id="equipe-carrossel-wrapper"
-                    >
-                        <h2 class="titulo-bloco-lateral">Nossa Equipe</h2>
-                        <div class="carrossel-container">
-                            <div class="carrossel">
-                                <div class="carrossel-item">
-                                    <span>
-                                        <p>Leonardo Nápoles</p>
-                                        <p>
-                                            Tech Lead / Dev. Front-End /
-                                            Designer
-                                        </p>
-                                    </span>
-                                </div>
-                                <div class="carrossel-item">
-                                    <span>
-                                        <p>Júlia Caroline</p>
-                                        <p>Redatora / Dev. Front End</p>
-                                    </span>
-                                </div>
-                                <div class="carrossel-item">
-                                    <span>
-                                        <p>Ana Paula R.</p>
-                                        <p>Product Owner</p>
-                                    </span>
-                                </div>
+        <div class="layout-sobre-principal animar-entrada">
+            <article class="coluna-texto">
+                <p>
+                    O <strong>Sacolão Rodrigues</strong> é uma empresa real
+                    sediada no município de Araujos-MG, é uma empresa que
+                    tem seu foco no comércio de produtos relacionados a
+                    hortifruti, produtos de alta qualidade que são
+                    adquiridos no CEASA-MG, próximo a Belo Horizonte e seu
+                    dono é <strong>Eurides</strong>, pai da aluna
+                    <strong>Ana Paula</strong>.
+                </p>
+                <br />
+                <p>
+                    Acerca do projeto referente a criação do site, as
+                    tarefas foram bem espalhadas entre os alunos e contamos
+                    com muita pesquisa, principalmente o uso de diversas
+                    ferramentas para pesquisa, principalmente pelo fato do
+                    site conter funcionalidades relativamente complexas,
+                    além do trabalho mútuo entre todos participantes para
+                    desenvolvimento de todas funcionalidades (como a
+                    produção do design, resolução das partes lógicas,
+                    estilização do site, e etc).
+                </p>
+                <br />
+                Criado e desenvolvido pelos alunos
+                <strong>Leonardo Nápoles</strong>,
+                <strong>Júlia Caroline</strong>,
+                <strong>Ana Paula Ferreira Rodrigues</strong>, estudantes do
+                curso de Ciência da Computação na FUMEC, para o trabalho
+                referente a matéria de introdução a web, do professor
+                <strong>Gilmar Borba</strong>.
+            </article>
+
+            <aside class="coluna-lateral">
+                <section class="bloco-lateral" id="equipe-carrossel-wrapper">
+                    <h2 class="titulo-bloco-lateral">Nossa Equipe</h2>
+                    <div class="carrossel-container">
+                        <div class="carrossel">
+                            <div class="carrossel-item">
+                                <span>
+                                    <p>Leonardo Nápoles</p>
+                                    <p>
+                                        Tech Lead / Dev. Front-End /
+                                        Designer
+                                    </p>
+                                </span>
                             </div>
-                            <button
-                                class="carrossel-btn prev"
-                                aria-label="Anterior"
-                            >
-                                ❮
-                            </button>
-                            <button
-                                class="carrossel-btn next"
-                                aria-label="Próximo"
-                            >
-                                ❯
-                            </button>
+                            <div class="carrossel-item">
+                                <span>
+                                    <p>Júlia Caroline</p>
+                                    <p>Redatora / Dev. Front End</p>
+                                </span>
+                            </div>
+                            <div class="carrossel-item">
+                                <span>
+                                    <p>Ana Paula R.</p>
+                                    <p>Product Owner</p>
+                                </span>
+                            </div>
                         </div>
-                    </section>
-                </aside>
-            </div>
+                        <button class="carrossel-btn prev" aria-label="Anterior">
+                            ❮
+                        </button>
+                        <button class="carrossel-btn next" aria-label="Próximo">
+                            ❯
+                        </button>
+                    </div>
+                </section>
+            </aside>
+        </div>
 
-            <button id="voltarBtn" class="animar-entrada" type="button">
-                Voltar para a página inicial
-            </button>
-        </main>
+        <button id="voltarBtn" class="animar-entrada" type="button">
+            Voltar para a página inicial
+        </button>
+    </main>
 
-        <div class="separador-footer"></div>
-        <footer-component class="animar-entrada"></footer-component>
-        <script type="module" src="/components/js/footerComponent.js"></script>
+    <div class="separador-footer"></div>
+    <footer-component class="animar-entrada"></footer-component>
+    <script type="module" src="/components/js/footerComponent.js"></script>
 
-        <script>
-            document.getElementById("voltarBtn").onclick = function () {
-                window.location.href = "../index.html";
-            };
+    <script>
+        document.getElementById("voltarBtn").onclick = function () {
+            window.location.href = "../index.html";
+        };
 
-            const carrossel = document.querySelector(".carrossel");
-            const carrosselItems = document.querySelectorAll(".carrossel-item");
-            const prevBtn = document.querySelector(".carrossel-btn.prev");
-            const nextBtn = document.querySelector(".carrossel-btn.next");
-            let currentIndex = 0;
-            let itemsPerPage = 1;
+        const carrossel = document.querySelector(".carrossel");
+        const carrosselItems = document.querySelectorAll(".carrossel-item");
+        const prevBtn = document.querySelector(".carrossel-btn.prev");
+        const nextBtn = document.querySelector(".carrossel-btn.next");
+        let currentIndex = 0;
+        let itemsPerPage = 1;
 
-            function updateItemsPerPage() {
-                if (window.innerWidth < 769) {
-                    itemsPerPage = 1;
-                } else {
-                    itemsPerPage = 1;
-                }
+        function updateItemsPerPage() {
+            if (window.innerWidth < 769) {
+                itemsPerPage = 1;
+            } else {
+                itemsPerPage = 1;
             }
+        }
 
-            function showSlide(index) {
-                if (!carrosselItems || carrosselItems.length === 0) return;
+        function showSlide(index) {
+            if (!carrosselItems || carrosselItems.length === 0) return;
 
-                const itemWidth = carrosselItems[0].offsetWidth;
-                const newTransform = -index * itemWidth;
+            const itemWidth = carrosselItems[0].offsetWidth;
+            const newTransform = -index * itemWidth;
 
-                if (carrossel)
-                    carrossel.style.transform =
-                        "translateX(" + newTransform + "px)";
+            if (carrossel)
+                carrossel.style.transform =
+                    "translateX(" + newTransform + "px)";
 
-                if (prevBtn) prevBtn.disabled = index === 0;
-                if (nextBtn)
-                    nextBtn.disabled =
-                        index >=
-                        Math.max(0, carrosselItems.length - itemsPerPage);
-            }
+            if (prevBtn) prevBtn.disabled = index === 0;
+            if (nextBtn)
+                nextBtn.disabled =
+                    index >=
+                    Math.max(0, carrosselItems.length - itemsPerPage);
+        }
 
-            function adjustCarouselOnResize() {
-                updateItemsPerPage();
-                if (carrosselItems && carrosselItems.length > 0) {
-                    if (
-                        currentIndex >=
-                            Math.max(
-                                0,
-                                carrosselItems.length - itemsPerPage + 1,
-                            ) &&
-                        carrosselItems.length > itemsPerPage
-                    ) {
-                        currentIndex = Math.max(
-                            0,
-                            carrosselItems.length - itemsPerPage,
-                        );
-                    } else if (carrosselItems.length <= itemsPerPage) {
-                        currentIndex = 0;
-                    }
-                } else {
+        function adjustCarouselOnResize() {
+            updateItemsPerPage();
+            if (carrosselItems && carrosselItems.length > 0) {
+                if (
+                    currentIndex >=
+                    Math.max(
+                        0,
+                        carrosselItems.length - itemsPerPage + 1,
+                    ) &&
+                    carrosselItems.length > itemsPerPage
+                ) {
+                    currentIndex = Math.max(
+                        0,
+                        carrosselItems.length - itemsPerPage,
+                    );
+                } else if (carrosselItems.length <= itemsPerPage) {
                     currentIndex = 0;
                 }
-                showSlide(currentIndex);
+            } else {
+                currentIndex = 0;
             }
+            showSlide(currentIndex);
+        }
 
-            if (nextBtn && prevBtn && carrossel) {
-                nextBtn.addEventListener("click", () => {
-                    if (
-                        currentIndex <
-                        Math.max(0, carrosselItems.length - itemsPerPage)
-                    ) {
-                        currentIndex++;
-                        showSlide(currentIndex);
+        if (nextBtn && prevBtn && carrossel) {
+            nextBtn.addEventListener("click", () => {
+                if (
+                    currentIndex <
+                    Math.max(0, carrosselItems.length - itemsPerPage)
+                ) {
+                    currentIndex++;
+                    showSlide(currentIndex);
+                }
+            });
+
+            prevBtn.addEventListener("click", () => {
+                if (currentIndex > 0) {
+                    currentIndex--;
+                    showSlide(currentIndex);
+                }
+            });
+            window.addEventListener("resize", adjustCarouselOnResize);
+            adjustCarouselOnResize();
+        }
+
+        const elementosAnimados =
+            document.querySelectorAll(".animar-entrada");
+        const observer = new IntersectionObserver(
+            (entradas, observer) => {
+                entradas.forEach((entrada) => {
+                    if (entrada.isIntersecting) {
+                        entrada.target.classList.add("visivel");
+                        observer.unobserve(entrada.target);
                     }
                 });
+            },
+            { threshold: 0.1 },
+        );
 
-                prevBtn.addEventListener("click", () => {
-                    if (currentIndex > 0) {
-                        currentIndex--;
-                        showSlide(currentIndex);
-                    }
-                });
-                window.addEventListener("resize", adjustCarouselOnResize);
-                adjustCarouselOnResize();
-            }
+        elementosAnimados.forEach((el) => observer.observe(el));
+    </script>
+</body>
 
-            const elementosAnimados =
-                document.querySelectorAll(".animar-entrada");
-            const observer = new IntersectionObserver(
-                (entradas, observer) => {
-                    entradas.forEach((entrada) => {
-                        if (entrada.isIntersecting) {
-                            entrada.target.classList.add("visivel");
-                            observer.unobserve(entrada.target);
-                        }
-                    });
-                },
-                { threshold: 0.1 },
-            );
-
-            elementosAnimados.forEach((el) => observer.observe(el));
-        </script>
-    </body>
 </html>

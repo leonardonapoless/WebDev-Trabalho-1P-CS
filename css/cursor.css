@@ -1,0 +1,168 @@
+*,
+*::before,
+*::after,
+html,
+body {
+    cursor: none !important;
+    -webkit-user-select: none !important;
+    -moz-user-select: none !important;
+    user-select: none !important;
+    -webkit-tap-highlight-color: transparent;
+}
+
+a,
+a:link,
+a:visited,
+a:hover,
+a:active,
+a:focus,
+button,
+button:hover,
+button:active,
+button:focus,
+input,
+input:hover,
+input:focus,
+select,
+select:hover,
+select:focus,
+textarea,
+textarea:hover,
+textarea:focus,
+label,
+label:hover,
+img,
+img:hover,
+svg,
+svg:hover,
+path,
+g,
+rect,
+circle,
+ellipse,
+i,
+i:hover,
+span,
+span:hover,
+div,
+div:hover,
+p,
+p:hover,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+[role="button"],
+[role="button"]:hover,
+[onclick],
+[onclick]:hover,
+[tabindex],
+[tabindex]:hover,
+.fa,
+.fas,
+.fab,
+.far,
+.fal,
+.fa:hover,
+.fas:hover,
+.fab:hover,
+.far:hover,
+.fal:hover,
+[id*="lottie"],
+[class*="lottie"],
+canvas,
+iframe,
+video,
+audio,
+embed,
+object,
+option,
+optgroup {
+    cursor: none !important;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="url"],
+input[type="number"],
+textarea {
+    cursor: none !important;
+    -webkit-user-select: text !important;
+    -moz-user-select: text !important;
+    user-select: text !important;
+}
+
+.custom-cursor {
+    position: fixed;
+    width: 26px;
+    height: 26px;
+    pointer-events: none;
+    z-index: 2147483647;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    -webkit-transition: width 0.15s ease, height 0.15s ease, opacity 0.2s ease;
+    transition: width 0.15s ease, height 0.15s ease, opacity 0.2s ease;
+}
+
+.custom-cursor.default {
+    background-image: url("../assets/cursors/default.svg");
+    width: 26px;
+    height: 26px;
+}
+
+.custom-cursor.hover {
+    background-image: url("../assets/cursors/hover.svg");
+    width: 34px;
+    height: 34px;
+}
+
+.custom-cursor.click {
+    background-image: url("../assets/cursors/click.svg");
+    width: 30px;
+    height: 30px;
+    -webkit-animation: clickPulse 0.15s ease-out;
+    animation: clickPulse 0.15s ease-out;
+}
+
+@-webkit-keyframes clickPulse {
+    0% {
+        -webkit-transform: translate(-50%, -50%) scale(1);
+        transform: translate(-50%, -50%) scale(1);
+    }
+
+    50% {
+        -webkit-transform: translate(-50%, -50%) scale(0.85);
+        transform: translate(-50%, -50%) scale(0.85);
+    }
+
+    100% {
+        -webkit-transform: translate(-50%, -50%) scale(1);
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+@keyframes clickPulse {
+    0% {
+        -webkit-transform: translate(-50%, -50%) scale(1);
+        transform: translate(-50%, -50%) scale(1);
+    }
+
+    50% {
+        -webkit-transform: translate(-50%, -50%) scale(0.85);
+        transform: translate(-50%, -50%) scale(0.85);
+    }
+
+    100% {
+        -webkit-transform: translate(-50%, -50%) scale(1);
+        transform: translate(-50%, -50%) scale(1);
+    }
+}

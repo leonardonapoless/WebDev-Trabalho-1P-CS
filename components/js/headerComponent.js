@@ -855,17 +855,16 @@ class Header extends HTMLElement {
 
     const desktopRightBoxHTML = `
             <div class="header-right-box">
-                ${
-                  isPerfilPage
-                    ? ""
-                    : `
+                ${isPerfilPage
+        ? ""
+        : `
                 <a href="/pages/cadastro.html" title="criar conta">
                     <div id="login-lottie-desktop" style="width: 60px; height: 60px;"></div>
                 </a>
                 <a href="/pages/perfil.html" title="meu perfil">
                     <div id="profile-lottie-desktop" style="width: 60px; height: 60px;"></div>
                 </a>`
-                }
+      }
                 <a href="/pages/checkout.html" title="carrinho">
                     <div id="cart-lottie-desktop" style="width: 60px; height: 60px;"></div>
                 </a>

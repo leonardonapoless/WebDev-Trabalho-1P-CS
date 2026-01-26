@@ -1,38 +1,36 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0", user-scalable=0>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" , user-scalable=0>
     <title>Finalizar Compra - Sacolão Rodrigues</title>
     <link rel="stylesheet" href="/css/base.css">
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/checkout.css">
-    <link rel="stylesheet" href="/css/cursor.css" media="(hover: hover) and (pointer: fine)" />
+    <link rel="preload" href="/assets/cursors/default.svg" as="image" type="image/svg+xml" />
+    <link rel="preload" href="/assets/cursors/hover.svg" as="image" type="image/svg+xml" />
+    <link rel="preload" href="/assets/cursors/click.svg" as="image" type="image/svg+xml" />
+    <link rel="stylesheet" href="/css/cursor.css" />
     <link rel="icon" href="/icon/logo.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="/js/config.js"></script>
+    <script src="/js/cursor.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
     <script type="module" src="/components/js/headerComponent.js" defer></script>
     <script type="module" src="/components/js/footerComponent.js" defer></script>
-    <script>
-        (function() {
-            var shouldLoadCursor = window.matchMedia && window.matchMedia('(hover: hover) and (pointer: fine)').matches;
-            if (shouldLoadCursor) {
-                var s = document.createElement('script');
-                s.src = '/js/cursor.js';
-                s.defer = true;
-                document.head.appendChild(s);
-            }
-        })();
-    </script>
     <script src="/js/checkout.js" defer></script>
 </head>
+
 <body>
     <header-component variant="checkout"></header-component>
 
     <div class="checkout-page-container">
         <div class="checkout-main-content">
             <section class="order-summary-section">
-                <h2><div id="cart-lottie-icon" class="lottie-icon"></div> Resumo do Pedido</h2>
+                <h2>
+                    <div id="cart-lottie-icon" class="lottie-icon"></div> Resumo do Pedido
+                </h2>
                 <div id="order-summary-items">
                     <p>Carregando resumo do pedido...</p>
                 </div>
@@ -41,7 +39,9 @@
             </section>
 
             <section class="customer-info-section">
-                <h2><div id="delivery-lottie-icon" class="lottie-icon"></div> Informações de Entrega e Pagamento</h2>
+                <h2>
+                    <div id="delivery-lottie-icon" class="lottie-icon"></div> Informações de Entrega e Pagamento
+                </h2>
                 <form id="checkout-form">
                     <div class="form-group">
                         <label for="fullName"><i class="fas fa-user"></i> Nome Completo</label>
@@ -74,4 +74,5 @@
     <footer-component></footer-component>
 
 </body>
+
 </html>
