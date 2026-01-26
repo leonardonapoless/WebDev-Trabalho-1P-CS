@@ -19,6 +19,7 @@ body {
         opacity: 0;
         transform: translateY(-30px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -30,6 +31,7 @@ body {
         opacity: 0;
         transform: translateY(30px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -41,6 +43,7 @@ body {
         opacity: 0;
         transform: translateY(25px) scale(0.92);
     }
+
     to {
         opacity: 1;
         transform: translateY(0) scale(1);
@@ -51,9 +54,11 @@ body {
     0% {
         transform: scale(1.15);
     }
+
     50% {
         transform: scale(1.3);
     }
+
     100% {
         transform: scale(1.15);
     }
@@ -64,6 +69,7 @@ body {
         opacity: 0;
         transform: translateX(-30px) scale(0.95);
     }
+
     to {
         opacity: 1;
         transform: translateX(0) scale(1);
@@ -72,8 +78,7 @@ body {
 
 header-component {
     display: block;
-    animation: fadeInDown 0.8s 0.15s cubic-bezier(0.39, 0.575, 0.565, 1)
-        backwards;
+    animation: fadeInDown 0.8s 0.15s cubic-bezier(0.39, 0.575, 0.565, 1) backwards;
 }
 
 .categoria-nav {
@@ -171,18 +176,22 @@ header-component {
     animation-delay: 0.45s;
     animation-delay: 0.45s;
 }
+
 .categoria-btn:nth-child(2) {
     animation-delay: 0.53s;
     animation-delay: 0.53s;
 }
+
 .categoria-btn:nth-child(3) {
     animation-delay: 0.61s;
     animation-delay: 0.61s;
 }
+
 .categoria-btn:nth-child(4) {
     animation-delay: 0.69s;
     animation-delay: 0.69s;
 }
+
 .categoria-btn:nth-child(5) {
     animation-delay: 0.77s;
     animation-delay: 0.77s;
@@ -282,7 +291,8 @@ header-component {
 
 .product {
     border: 2px solid black;
-    border-radius: 25px;
+    border-radius: 60px;
+    corner-shape: squircle;
     padding: 10px;
     position: relative;
     width: 100%;
@@ -709,12 +719,14 @@ footer-component {
         padding-left: 20px;
         padding-right: 20px;
     }
+
     .product-grid {
         grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
         margin-left: auto;
         margin-right: auto;
         gap: 2.5rem;
     }
+
     .product {
         max-width: none;
     }
@@ -733,8 +745,8 @@ footer-component {
 
 .no-results-wrapper {
     display: flex;
-    justify-content: center; /* horizontal centering */
-    align-items: center; /* vertical centering */
-    min-height: 300px; /* height of empty container */
+    justify-content: center;
+    align-items: center;
+    min-height: 300px;
     width: 100%;
 }
